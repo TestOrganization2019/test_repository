@@ -15,5 +15,9 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: Run post tests
+          command: bash ~/project/post_test.sh
+          no_output_timeout: 1000
 
           
