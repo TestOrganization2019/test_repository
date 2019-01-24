@@ -18,7 +18,7 @@
           },
           "name": "we have behave installed",
           "result": {
-            "duration": 43154,
+            "duration": 45061,
             "status": "passed"
           },
           "step_type": "given"
@@ -31,7 +31,7 @@
           },
           "name": "we implement a test",
           "result": {
-            "duration": 38147,
+            "duration": 39816,
             "status": "passed"
           },
           "step_type": "when"
@@ -44,7 +44,7 @@
           },
           "name": "behave will test it for us!",
           "result": {
-            "duration": 35763,
+            "duration": 37193,
             "status": "passed"
           },
           "step_type": "then"
@@ -74,7 +74,7 @@
           },
           "name": "add second scenario",
           "result": {
-            "duration": 40293,
+            "duration": 42200,
             "status": "passed"
           },
           "step_type": "when"
@@ -87,7 +87,7 @@
           },
           "name": "fail second scenario to test",
           "result": {
-            "duration": 210285,
+            "duration": 219822,
             "error_message": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.4/dist-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/usr/local/lib/python3.4/dist-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"steps/step_tutorial01.py\", line 29, in step_impl\n    assert False\nAssertionError\n",
             "status": "failed"
           },

@@ -7,3 +7,4 @@ curl -H "Content-Type: application/json" -X POST -H "Authorization: Bearer $toke
 
 'curl -H "Content-Type: application/json" -H "Authorization: Bearer $token" --data @ ~/project/report_cucumber.json  "https://xray.cloud.xpand-it.com/api/v1/import/execution/junit?projectKey=DEM"'
 
+/home/sachinrau/repository_xray/test_repository
