@@ -1,0 +1,19 @@
+# Ampush
+# config.yml
+# r evision - 0.0.1
+
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - test_branch
+
+    machine:
+      image: circleci/classic:latest
+
+    steps:
+      - checkout
+
+
+          
