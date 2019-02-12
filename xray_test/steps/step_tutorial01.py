@@ -20,7 +20,7 @@ def step_impl(context):
 
 @When('add first scenario')
 def step_impl(context):
-    assert False
+    assert True
 
 @Then('fail second scenario to test')
 def step_impl(context):
