@@ -21,8 +21,8 @@ jobs:
           no_output_timeout: 1000
 
       - run:
-          name: Install all Application
-          command: bash ~/project/circleci_test.sh
+          name: Run Behave code
+          command: bash ~/project/run_test.sh
           no_output_timeout: 1000
 
       - run:
