@@ -4,9 +4,7 @@
 # ----------------------------------------------------------------------------
 from behave import given, when, then
 from behave import Given, When, Then
-from xray_test.steps.blender import Blender
 #from hamcrest import assert_that, equal_to
-
 
 @given('we have behave installed')
 def step_impl(context):
@@ -20,12 +18,12 @@ def step_impl(context):
 def step_impl(context):
     assert True
 
-@When('add second scenario')
+@When('add first scenario')
 def step_impl(context):
-    assert True
+    assert False
 
 @Then('fail second scenario to test')
 def step_impl(context):
-    assert False
+    assert True
 
 

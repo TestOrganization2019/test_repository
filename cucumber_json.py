@@ -218,8 +218,11 @@ class CucumberJSONFormatter(Formatter):
         assert self.current_feature_data
         self.current_feature_data['status'] = self.status(self.current_feature.status)
 
+    # def write_tags(self, tags):
+    #     return [{'name': tag, 'line': tag.line if hasattr(tag, 'line') else 1} for tag in tags]
+
     def write_tags(self, tags):
-        return [{'name': tag, 'line': tag.line if hasattr(tag, 'line') else 1} for tag in tags]
+        return [{'name': '@' + tag, 'line': tag.line if hasattr(tag, 'line') else 1} for tag in tags]
 
     def generate_id(self, feature, scenario=None):
         def convert(name):
