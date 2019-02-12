@@ -16,6 +16,16 @@ jobs:
       - checkout
 
       - run:
+          name: Install all Application
+          command: bash ~/project/circleci_test.sh
+          no_output_timeout: 1000
+
+      - run:
+          name: Install all Application
+          command: bash ~/project/circleci_test.sh
+          no_output_timeout: 1000
+
+      - run:
           name: Run post tests
           command: bash ~/project/post_test.sh
           no_output_timeout: 1000
