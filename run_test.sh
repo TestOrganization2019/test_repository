@@ -3,10 +3,10 @@
 # set Python Path
 export PYTHONPATH=.
 sleep 2s
-token=$(curl -H "Content-Type: application/json" -X POST --data '{ "client_id": "7CD4B7151C0049AE9E9D49DDC7C8174E","client_secret": "e8f8a5f710f9425c8399933db53424f683b66d6b3dc46bcb67b8abe9b7915683" }'  https://xray.cloud.xpand-it.com/api/v1/authenticate| tr -d '"')
+token=$(curl -H "Content-Type: application/json" -X POST --data '{ "client_id": "C19C6BF814F7442EA0DC15A86A3A2800","client_secret": "2354aedeaa47f729fbf0ce4c0b16f3b3a1624f759c7e492ad01339c6b3deb179" }'  https://xray.cloud.xpand-it.com/api/v1/authenticate| tr -d '"')
 sleep 5s
-curl -H "Content-Type: application/json" -X GET -H "Authorization: Bearer $token"  "https://xray.cloud.xpand-it.com/api/v1/export/cucumber?keys=DSP-14" >cucumber_scenario
-sleep 2s
+curl -H "Content-Type: application/json" -X GET -H "Authorization: Bearer $token"  "https://xray.cloud.xpand-it.com/api/v1/export/cucumber?keys=DP-7" >cucumber_scenario
+sleep 5s
 unzip cucumber_scenario
 sleep 1s
 python3 remove_extra_scenario.py
