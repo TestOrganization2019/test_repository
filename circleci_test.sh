@@ -16,9 +16,9 @@ pip3 install selenium==3.8.0
 pip3 install behave
 pip3 install allure-behave
 #pip3 install pyvirtualdisplay
-#pip3 install ipdb
+pip3 install ipdb
 #pip3 install xvfbwrapper
-#pip3 install nose
+pip3 install nose
 
 #Install chrome
 #sudo apt-get install libxss1 libappindicator1 libindicator7
