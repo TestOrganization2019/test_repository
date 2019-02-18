@@ -17,7 +17,7 @@ def step_impl(context):
 
 @then('behave will test it for us!')
 def step_impl(context):
-    assert True
+    assert False
 
 @When('add first scenario')
 def step_impl(context):
@@ -43,7 +43,7 @@ def step_impl(context):
     calculation_result = calci_obj.select_operation_method(context.a, context.b, context.operator)
 
     if context.operator =='divide':
-        assert (context.a /context.b ) == calculation_result
+        assert False#(context.a /context.b ) == calculation_result
 
     elif context.operator =='multiply':
         assert (context.a *context.b ) == calculation_result
