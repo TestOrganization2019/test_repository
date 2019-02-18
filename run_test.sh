@@ -15,6 +15,8 @@ behave xray_test/updated_feature_file.feature --format=cucumber_json:PrettyCucum
 sleep 3s
 
 #run behave tests
+
 #touch /home/circleci/project/xray_test.txt
+
 #behave "/home/circleci/project/xray_test/01_basic.feature"
 #echo -e "Completed feature : 01_basic.feature"
