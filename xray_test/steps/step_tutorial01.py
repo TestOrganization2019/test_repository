@@ -43,7 +43,7 @@ def step_impl(context):
     calculation_result = calci_obj.select_operation_method(context.a, context.b, context.operator)
 
     if context.operator =='divide':
-        assert False#(context.a /context.b ) == calculation_result
+        assert (context.a /context.b ) == calculation_result
 
     elif context.operator =='multiply':
         assert (context.a *context.b ) == calculation_result
